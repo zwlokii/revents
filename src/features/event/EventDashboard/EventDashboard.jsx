@@ -125,11 +125,7 @@ class EventDashboard extends Component {
 					/>
 				</Grid.Column>
 				<Grid.Column width={6}>
-					<Button
-						onClick={this.handleFormOpen}
-						content="Create Event"
-						positive
-					/>
+					<Button onClick={this.handleFormOpen} content="Create Event" positive />
 					{this.state.isOpen && (
 						<EventForm
 							updatedEvent={this.handleUpdateEvent}
